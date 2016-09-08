@@ -1,0 +1,562 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#foot {
+  color: white;
+  text-align: center;
+  background: #607D8B;
+  padding: 5% 0;
+}
+
+#foot h2 {
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 0;
+}
+
+#splash {
+  text-align: center;
+  min-height: 100vh;
+  background: #26C6DA;
+}
+
+#mlogo {
+  width: 140px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#launch {
+  margin: 0;
+  color: white;
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+#slogn {
+  font-size: 60px;
+  margin: 0;
+  color: white;
+  font-weight: 800;
+  padding-top: 12%;
+}
+
+.sections {
+  position: relative;
+  min-height: 100vh;
+}
+
+.phones {
+  margin: 50px 0;
+}
+
+.big-text {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-weight: 800;
+  margin-top: 25%;
+  font-size: 70px;
+}
+
+.phone-cont {
+  width: 30%!important;
+}
+
+.big-text-cont {
+  width: 65%!important;
+}
+
+#social {
+  text-align: right;
+}
+
+#social a {
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+  margin: 0 30px;
+}
+
+#social a:last-child {
+  margin-right: 0;
+}
+
+#links a {
+  display: block;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+#links a:last-child {
+  margin-bottom: 0;
+}
+
+#footer {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#footer p {
+  font-size: 12px;
+  color: white;
+  margin-bottom: 28px;
+  line-height: 22px;
+}
+
+#lower-nav img {
+  width: 100%;
+}
+
+#lower-nav {
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+#lower-nav h3 {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+#lower-nav p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+#footer {
+  background: #263238;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+.bg-faded {
+  background: rgba(90, 212, 206, .9)!important;
+}
+
+#exCollapsingNavbar2 .navbar-nav .nav-item {
+  transition: all 0.5s ease;
+}
+
+#exCollapsingNavbar2 {
+  text-align: center;
+}
+
+#exCollapsingNavbar2 .nav-link {
+  font-weight: 400;
+  margin: 0 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+#exCollapsingNavbar2 .navbar-nav .nav-item {
+  display: inline-block;
+  float: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255,255,255,.9);
+}
+
+.view-btn {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.tile {
+  text-align: center;
+  padding: 0;
+}
+
+.tile img {
+  width: 100%;
+}
+
+.tile p {
+  text-align: justify;
+  padding: 15px 90px;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.tile h2 {
+  font-size: 24px;
+  letter-spacing: 5px;
+  padding: 60px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.clear {
+  clear: both;
+}
+
+.none {
+  display: none;
+}
+
+#nav {
+  background: rgba(255, 255, 255, .8);
+}
+
+#logo-c {
+
+}
+
+.main-logo {
+  width: 200px;
+  z-index: 10;
+  position: absolute;;
+  top: 35%;
+  transform: translateY(-70%);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s ease;
+  background-image: url('../img/crystal-logo.png');
+  height: 150px;
+}
+
+.mini-logo {
+  width: 150px;
+  height: 112.5px;
+  position: fixed;
+  top: -75px;
+  z-index: 2000;
+  transition: all 0.5s ease;
+  left: 48.3%;
+  transform: translateX(-50%);
+  background-image: url('../img/crystal-logo.png');
+}
+
+#mobile-logo {
+  margin: auto;
+  text-align: center;
+}
+
+#main-slider-container {
+  padding: 0;
+}
+
+#main-slider {
+  max-height: 450px;
+  min-height: 250px;
+}
+
+#main-slider img {
+  min-height: 250px;
+}
+
+#main-slider img {
+  width: 100%;
+}
+
+
+#booking-form {
+  background: #5AD4CE;
+  padding: 15px;
+  margin-top: -30px;
+  overflow: auto;
+  padding-top: 20px;
+}
+
+#booking-form h1 {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 43px;
+}
+
+#booking-form h3 {
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+}
+
+#home-book-btn {
+  text-align: right;
+}
+
+#home-book-btn button {
+  border: none;
+  background: none;
+  color: white;
+  margin-top: 5px;
+}
+
+#booking-form select {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: white;
+  font-weight: 100;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-right: 5px;
+}
+
+.page {
+  text-align: center;
+}
+
+.page img {
+  width: 100%;
+}
+
+.page h1 {
+  margin-top: 50px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.page p {
+  font-weight: 100;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.bar {
+  height: 52px;
+  transition: all 0.3s ease;
+}
+
+.rooms-bar {
+  background: #7E57C2;
+}
+
+.services-bar {
+  background: #66BB6A;
+}
+
+.activities-bar {
+  background: #FFA726;
+}
+
+.bar-link:hover {
+  text-decoration: none!important;
+}
+
+.bar h2 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  padding: 15px;
+}
+
+.bar-link img {
+  width: 100%;
+}
+
+.page p {
+    padding: 0 30px;
+}
+
+#footer {
+  background: #263238;
+  margin-top: 60px;
+}
+
+#footer .container {
+  padding: 0;
+}
+
+#footer-links {
+  padding: 0;
+}
+
+#footer-links a:first-child {
+  padding-left: 0;
+}
+
+#footer-links a {
+  color: white;
+  padding: 20px 15px;
+  display: inline-block;
+}
+
+#footer-social {
+  color: white;
+  font-size: 24px;
+  text-align: right;
+}
+
+#footer-social a {
+  color: white;
+  padding: 15px;
+  display: inline-block;
+}
+
+#homepage-tiles a {
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+#homepage-tiles a:hover {
+  margin-top: -30px;
+  transition: all 0.3s ease;
+}
+
+#homepage-tiles a:hover .bar {
+  height: 80px;
+  transition: all 0.3s ease;
+}
+
+#main-carousel-container {
+  padding: 0!important;
+  position: relative;
+}
+
+#main-carousel .carousel-control {
+  background: none;
+}
+
+.carousel-bg {
+  height: 100vh;
+}
+
+.flex-grid {
+  display: flex;
+  -webkit-column-count: 4;
+}
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-thirds .col {
+
+}
+
+.rev {
+  flex-direction: row-reverse;
+}
+
+.one {
+  order: 1;
+}
+
+.two {
+  order: 2;
+}
+
+.col {
+  width: 50%;
+}
+
+.right-spacer {
+  margin-right: 130px;
+  transition: all 0.5s ease;
+}
+
+.left-spacer {
+  margin-left: 130px;
+  transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 800px) {
+  .page {
+    margin: 0 5px;
+  }
+  .page h1 {
+    font-size: 24px;
+  }
+  #homepage-tiles {
+    margin: 0 5px;
+  }
+  .bar {
+    margin-bottom: 30px;
+  }
+  #booking-form {
+    text-align: center;
+  }
+  #booking-form .col-md-3 {
+    padding: 5px 0;
+  }
+  #home-book-btn {
+    text-align: center;
+  }
+  #footer-links {
+    text-align: center;
+  }
+  #footer-social {
+    text-align: center;
+  }
+  #exCollapsingNavbar2 {
+    padding: 0;
+  }
+  .carousel-bg {
+    background-size: cover!important;
+  }
+  .flex-grid-thirds {
+    display: block;
+  }
+  .col {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  #exCollapsingNavbar2 .navbar-nav .nav-item {
+    display: block;
+    text-align: left;
+    transition: all 0.5s ease;
+  }
+  .tile p {
+    padding: 15px 30px;
+    padding-bottom: 30px;
+  }
+  .tile h2 {
+    padding: 30px;
+    padding-top: 50px;
+  }
+  .view-btn {
+    display: block;
+    margin-bottom: 50px;
+  }
+  #social {
+    text-align: left;
+    margin-top: 30px;
+  }
+  #social a:first-child {
+    margin-left: 0;
+  }
+  .big-text {
+    margin: 0;
+    font-size: 50px;
+  }
+  .phone-cont {
+    width: 100%!important;
+  }
+  .big-text {
+    line-height: 55px;
+    margin-left: 20%;
+    width: 100%;
+    font-size: 42px;
+    padding-bottom: 20%;
+  }
+  .big-text.a {
+    padding-top: 20%;
+    padding-bottom: 0;
+  }
+  #slogn {
+    margin-top: 20%;
+  }
+  #foot {
+    padding: 15% 0;
+  }
+  #foot h2 {
+    font-size: 30px;
+  }
+}
