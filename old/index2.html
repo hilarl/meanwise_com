@@ -1,0 +1,65 @@
+<html>
+  <head>
+  <style>
+  .container > div {
+    min-width: 100%;
+    min-height: 100vh;
+    display: block;
+    position: relative;
+    }
+
+    .red {
+    background-color: red;
+    overflow: hidden;
+    }
+
+    .blue {
+    background-color: blue;
+    }
+
+    .green {
+    background-color: green;
+    }
+
+    .phone {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 50%;
+    left: 20%;
+    }
+    .phone img {
+    position: absolute;
+    width: 20%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="red">
+        <div class="phone">
+        <img src="https://duo.google.com/images/phones/1b.png">
+      </div>
+      </div>
+      <div class="blue">
+      </div>
+      <div class="green">
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+    $(window).scroll(function (event) {
+      var scroll = $(window).scrollTop();
+
+      x = "translate3d("+ scroll +"px,"+ scroll +"px,0)";
+      $('.container .phone').css({
+      transform: x
+      });
+    });
+    </script>
+  </body>
+</html>
