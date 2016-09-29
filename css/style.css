@@ -1,3 +1,46 @@
+/*
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('../fonts/AvenirNext-Regular.eot');
+	src: url('../fonts/AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNext-Regular.woff') format('woff'),
+		url('../fonts/AvenirNext-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('../fonts/AvenirNext-Medium.eot');
+	src: url('../fonts/AvenirNext-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNext-Medium.woff') format('woff'),
+		url('../fonts/AvenirNext-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+*/
+
+@font-face {
+	font-family: 'Avenir Next Demi';
+	src: url('../fonts/AvenirNext-DemiBold.eot');
+	src: url('../fonts/AvenirNext-DemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNext-DemiBold.woff') format('woff'),
+		url('../fonts/AvenirNext-DemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: url('../fonts/AvenirNext-Heavy.eot');
+	src: url('../fonts/AvenirNext-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNext-Heavy.woff') format('woff'),
+		url('../fonts/AvenirNext-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
 /* --------------------------------
 
 Primary style
@@ -41,7 +84,7 @@ Main Components
 .cd-header {
   position: relative;
   height: 100%;
-  background-color: #26C6DA;
+  background-color: #59CEEC;
   z-index: 1;
 }
 #logo {
@@ -60,14 +103,15 @@ Main Components
 
 #foot h2 {
   letter-spacing: 1px;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 2rem;
   margin: 0;
 }
 .cd-header h1 {
+  font-family: 'Avenir Next';
   width: 90%;
   color: white;
-  font-weight: 800;
+  font-weight: 900;
   text-align: center;
   font-size: 3rem;
   -webkit-font-smoothing: antialiased;
@@ -85,6 +129,7 @@ Main Components
 }
 
 #launch {
+  font-family: 'Avenir Next Demi';
   font-weight: 600;
   font-size: 2rem;
   display: block;
@@ -94,9 +139,10 @@ Main Components
 @media only screen and (min-width: 768px) {
   .cd-header h1 {
     font-size: 6rem;
-    font-weight: 800;
+    font-weight: 900;
   }
   #launch {
+    font-family: 'Avenir Next Demi';
     font-weight: 600;
     font-size: 3.5rem;
     display: block;
@@ -106,7 +152,7 @@ Main Components
     height: 80px;
   }
   #foot h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -123,9 +169,11 @@ Main Components
   -moz-osx-font-smoothing: grayscale;
 }
 .cd-fixed-background h2 {
+  font-family: 'Avenir Next';
   font-size: 3.5rem;
   line-height: 50px;
-  font-weight: 800;
+  font-weight: 900;
+  letter-spacing: 1.5px;
   margin-bottom: 1em;
 }
 .cd-fixed-background p {
@@ -177,8 +225,9 @@ Main Components
   }
   .cd-fixed-background h2 {
     font-size: 6rem;
-    line-height: 60px;
-    font-weight: 800;
+    line-height: 70px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
   }
   .cd-fixed-background p {
     font-size: 1.8rem;
