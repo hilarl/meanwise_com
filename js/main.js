@@ -1,4 +1,25 @@
 jQuery(document).ready(function($){
+
+	$("#demo02").animatedModal({
+			modalTarget:'modal-02',
+			animatedIn:'fadeInUpBig',
+			animatedOut:'fadeOutDownBig',
+			color:'#1DE9B6',
+			// Callbacks
+			beforeOpen: function() {
+					console.log("The animation was called");
+			},
+			afterOpen: function() {
+					console.log("The animation is completed");
+			},
+			beforeClose: function() {
+					console.log("The animation was called");
+			},
+			afterClose: function() {
+					console.log("The animation is completed");
+			}
+	});
+
 	var animating = false;
 
 	//update arrows visibility and detect which section is visible in the viewport
