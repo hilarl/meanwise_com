@@ -149,7 +149,7 @@ Main Components
 	padding-top: 20px;
 	background: rgba(0, 0, 0, .05);
 }
-#SubsribeForm1 input {
+#emailAdd {
 	width: 80%;
 	background: none;
 	font-size: 24px;
@@ -159,7 +159,7 @@ Main Components
 	font-weight: 100;
 	padding: 10px 0;
 }
-#SubsribeForm1 button {
+#SubscribeEmail {
 	border: none;
 	background: none;
 	color: white;
