@@ -4,10 +4,9 @@ require("_mc.php");
 
 use \DrewM\MailChimp\MailChimp;
 
-$MailChimp = new MailChimp('ff14f0f09d36eb334e4968487e36bc9c-us11');
-$result = $MailChimp->post('lists/b3e4b41b5f/members', array(
+$MailChimp = new MailChimp('7d446f0db3c6f9e4b5f9b6f35a587fad-us14');
+$result = $MailChimp->post('lists/02801ed82a/members', array(
                 'email_address'     => $_POST["email"],
-                'location'          => $_POST["location"],
                 'status'            => 'subscribed'
             ));
 

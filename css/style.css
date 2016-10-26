@@ -149,7 +149,7 @@ Main Components
 	padding-top: 20px;
 	background: rgba(0, 0, 0, .05);
 }
-#invite-form input {
+#SubsribeForm1 input {
 	width: 80%;
 	background: none;
 	font-size: 24px;
@@ -159,7 +159,7 @@ Main Components
 	font-weight: 100;
 	padding: 10px 0;
 }
-#invite-form button {
+#SubsribeForm1 button {
 	border: none;
 	background: none;
 	color: white;
@@ -316,7 +316,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	.modal-content h1 {
 		font-size: 48px;
 	}
-	#invite-form input {
+	#SubsribeForm1 input {
 		width: 35%;
 		font-size: 32px;
 	}
