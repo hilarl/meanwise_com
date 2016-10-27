@@ -30,13 +30,13 @@
 	<div id="modal-02">
 			<!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
 			<div  id="btn-close-modal" class="close-modal-02">
-					<img class="closebt" src="img/closebt.svg">
+					<img id="reset-modal" class="closebt" src="img/closebt.svg">
 			</div>
 
 			<div class="modal-content">
 				<h1>Request early invite</h1>
 				<form name="SubsribeForm1" id="SubsribeForm1">
-					<input name="emailAdd" id="emailAdd" type="text" />
+					<input name="email" id="emailAdd" type="text" />
 					<p class="err"><span id="msg"></span></p>
 					<button id="SubscribeEmail">Submit</button>
 				</form>
@@ -81,9 +81,12 @@
 	<script src="js/animatedModal.min.js"></script>
 	<script src="js/main.js"></script> <!-- Resource jQuery -->
 	<script>
+	$('#reset-modal').click(function() {
+		$('#msg').html("");
+	});
 	$(document).on("click", "#SubscribeEmail", function(e){
 		e.preventDefault();
-		var emailAdd = $('input[name="emailAdd"]').val();
+		var emailAdd = $('input[name="email"]').val();
 		console.log(emailAdd);
 
 		$.ajax({
@@ -94,17 +97,17 @@
 			success: function(response){
 				switch(response.status){
 					case 'saved':
-						$('#msg').HTML("Success");
+						$('#msg').html(response.message);
 					break;
 					case 'empty':
-						$('#msg').HTML("Empty");
+						$('#msg').html(response.message);
 					break;
 					default:
-						$('#msg').HTML("Error!");
+						$('#msg').html(response.message);
 				}
 			 },
-			 error:function(response){
-				$('#msg').HTML("Oops! Something seems to have gone wrong.");
+			 error: function(response){
+				$('#msg').html(response.status);
 			 }
 		});
 	});
