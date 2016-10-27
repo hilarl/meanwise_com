@@ -84,14 +84,19 @@
 	$('#reset-modal').click(function() {
 		$('#msg').html("");
 	});
+
 	$(document).on("click", "#SubscribeEmail", function(e){
 		e.preventDefault();
 		var emailAdd = $('input[name="email"]').val();
 		console.log(emailAdd);
 
+		var data = {
+		  email: $("#emailAdd").val()
+		};
+
 		$.ajax({
 			url: "subscribe.php",
-			data: { email: emailAdd},
+			data: data,
 			method: "POST",
 			timeout: 15000,
 		}).done(function( msg ) {
