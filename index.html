@@ -91,24 +91,13 @@
 
 		$.ajax({
 			url: "subscribe.php",
-			data: $('#SubsribeForm1').serialize(),
-			dataType: "json",
+			data: { email: emailAdd},
+			method: "POST",
 			timeout: 15000,
-			success: function(response){
-				switch(response.status){
-					case 'saved':
-						$('#msg').html(response.message);
-					break;
-					case 'empty':
-						$('#msg').html(response.message);
-					break;
-					default:
-						$('#msg').html(response.message);
-				}
-			 },
-			 error: function(response){
-				$('#msg').html(response.status);
-			 }
+		}).done(function( msg ) {
+		  $( "#msg" ).html( msg );
+		}).fail(function( jqXHR, textStatus ) {
+		  alert( "Request failed: " + textStatus );
 		});
 	});
 	</script>
