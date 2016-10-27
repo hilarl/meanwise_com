@@ -36,7 +36,7 @@
 			<div class="modal-content">
 				<h1>Request early invite</h1>
 				<form name="SubsribeForm1" id="SubsribeForm1">
-					<input name="emailAdd" id="emailAdd" type="text" />
+					<input name="email" id="emailAdd" type="text" />
 					<p class="err"><span id="msg"></span></p>
 					<button id="SubscribeEmail">Submit</button>
 				</form>
@@ -87,12 +87,10 @@
 
 	$(document).on("click", "#SubscribeEmail", function(e){
 		e.preventDefault();
-		var emailAdd = $('input[name="emailAdd"]').val();
+		var emailAdd = $('input[name="email"]').val();
 		console.log(emailAdd);
 
-		var data = {
-		  email: $("#emailAdd").val()
-		};
+		var data = "email=" + $("#emailAdd").val();
 
 		$.ajax({
 			url: "subscribe.php",
