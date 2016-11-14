@@ -420,6 +420,32 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .section h1 {
+		font-size: 36px;
+		line-height: 50px;
+	}
+	#char h1 {
+		font-size: 36px!important;
+	}
+	#char p {
+		font-size: 13px!important;
+	}
+	#requirements h3 {
+		font-size: 16px!important;
+	}
+	#requirements h1 {
+		margin-bottom: 30px!important;
+	}
+	#expected h3 {
+		font-size: 16px!important;
+		margin-bottom: 20px!important;
+	}
+	#expected h1 {
+		margin-bottom: 30px!important;
+	}
+}
+
 .no-js .cd-vertical-nav {
   display: none;
 }
